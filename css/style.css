@@ -48,13 +48,15 @@ header {
     justify-content: center;
 }
 
-/*navigation bar styling*/
+/*navigation bar styling, use flex and wrap*/
 
 .nav_item {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
+
+/*navigation bar styling, visited page*/
 
 .nav_item a {
     color: #0703ff;
@@ -121,11 +123,11 @@ header {
     width: 300px;
 }
 
-/*media query screens for bigger than 900px +*/
+/*media query for screens bigger than 900px +*/
 
 @media (min-width: 900px) {
 
-    /*sticky header*/
+    /*sticky/stagnant header, stays when scrolling*/
     body>header {
         position: -webkit-sticky;
         position: sticky;
@@ -150,7 +152,7 @@ header {
         flex-direction: row;
     }
 
-    /*header to left*/
+    /*shifting header to left*/
     header {
         justify-content: left;
         align-items: center;
@@ -158,27 +160,13 @@ header {
         flex-direction: row;
     }
 
-    /*move logo to center*/
+    /*moving logo to center*/
     #logo {
         justify-content: center;
         top: 0;
     }
 
-    /*.card {
-        flex-direction: row;
-    }
-
-    .pricing {
-        align-items: center;
-        justify-content: center;
-    }
-    .about>header {
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-    }
-    
-    /*changing .card initial size*/
+    /*changing .card initial size for this media screen*/
     .card>header {
         flex-basis: 275px;
         padding-top: 20px;
@@ -191,18 +179,6 @@ header {
 
     .card>ul {
         flex-basis: 275px;
-    }
-
-    .card>button {
-        margin-right: 25px;
-    }
-
-    div {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        /* width: 450px; */
     }
 
     .card {
@@ -256,6 +232,7 @@ header {
         border: 2px solid #45ADDD;
         flex-basis: 325px;
     }
+
     .card>ul {
         flex-basis: 325px;
     }
